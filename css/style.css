@@ -1,6 +1,6 @@
 /* --------------------------------------------------------------------------
-   SATHIALA OVERSEAS & IMMIGRATION PVT. LTD. - LUXURY EMERALD & GOLD THEME
-   No blue colors. Deep Dark Emerald, Warm Imperial Gold, Soft Mint Azure.
+   SATHIALA OVERSEAS & IMMIGRATION PVT. LTD. - IMPERIAL CHARCOAL & GOLD THEME
+   No green colors. Deep Charcoal Midnight, Imperial Warm Gold, Soft Platinum.
    Location: Majitha Road, Opp. Dominos, Amritsar, Punjab – 143001
    Founder: Mr. Amritpal Singh | Phone: +91 9780795050 | Est. 2021
    -------------------------------------------------------------------------- */
@@ -8,25 +8,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
 
 :root {
-  --navy-deep: #061a14;
-  --navy-dark: #0b271e;
-  --navy-card: #11382b;
-  --navy-hover: #174838;
-
-  --emerald-primary: #059669;
-  --emerald-vibrant: #10b981;
-  --emerald-light: #ecfdf5;
-  --cyan-accent: #34d399;
+  --navy-deep: #080e18;
+  --navy-dark: #0e1726;
+  --navy-card: #162235;
+  --navy-hover: #1e2d45;
 
   --gold-accent: #f59e0b;
+  --gold-vibrant: #eab308;
   --gold-light: #fef3c7;
   --gold-gradient: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
 
-  --emerald-green: #10b981;
-  --emerald-dark: #059669;
+  --cyan-accent: #fbbf24;
 
-  --section-ice-bg: linear-gradient(180deg, #f0fdf4 0%, #ecfdf5 100%);
-  --section-cobalt-bg: linear-gradient(180deg, #061a14 0%, #0b271e 100%);
+  --emerald-green: #f59e0b;
+  --emerald-dark: #d97706;
+
+  --section-ice-bg: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  --section-cobalt-bg: linear-gradient(180deg, #080e18 0%, #0e1726 100%);
 
   --text-main: #0f172a;
   --text-muted: #64748b;
@@ -36,9 +34,9 @@
   --border-dark: rgba(255, 255, 255, 0.14);
   --border-light: #cbd5e1;
   
-  --shadow-sm: 0 4px 12px rgba(6, 26, 20, 0.08);
-  --shadow-md: 0 12px 30px rgba(6, 26, 20, 0.15);
-  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 4px 12px rgba(8, 14, 24, 0.08);
+  --shadow-md: 0 12px 30px rgba(8, 14, 24, 0.15);
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.5);
 
   --radius-sm: 8px;
   --radius-md: 14px;
@@ -146,15 +144,16 @@ img {
 }
 
 .btn-primary {
-  background: var(--emerald-vibrant);
-  color: #ffffff;
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  background: var(--gold-gradient);
+  color: #000000;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
 }
 
 .btn-primary:hover {
-  background: var(--emerald-primary);
+  background: linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%);
+  color: #ffffff;
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 10px 28px rgba(16, 185, 129, 0.6);
+  box-shadow: 0 10px 28px rgba(245, 158, 11, 0.6);
 }
 
 .btn-whatsapp {
@@ -170,21 +169,21 @@ img {
 }
 
 .btn-outline {
-  background: rgba(6, 26, 20, 0.6);
+  background: rgba(14, 23, 38, 0.8);
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .btn-outline:hover {
-  background: var(--emerald-vibrant);
-  border-color: var(--emerald-vibrant);
-  color: #ffffff;
+  background: var(--gold-accent);
+  border-color: var(--gold-accent);
+  color: #000000;
   transform: translateY(-3px);
 }
 
 /* Top Utility Bar */
 .top-bar {
-  background: #030d0a;
+  background: #040810;
   color: #ffffff;
   padding: 0.55rem 0;
   font-size: 0.83rem;
@@ -278,7 +277,7 @@ img {
 
 .brand-text span {
   font-size: 0.72rem;
-  color: var(--cyan-accent);
+  color: var(--gold-accent);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -335,7 +334,7 @@ img {
 .mobile-drawer {
   position: fixed;
   inset: 0;
-  background: rgba(3, 13, 10, 0.92);
+  background: rgba(4, 8, 16, 0.92);
   backdrop-filter: blur(16px);
   z-index: 2000;
   opacity: 0;
@@ -399,7 +398,7 @@ img {
 
 /* Flag Marquee Ticker */
 .flag-marquee {
-  background: #030d0a;
+  background: #040810;
   color: #ffffff;
   overflow: hidden;
   white-space: nowrap;
@@ -427,7 +426,7 @@ img {
   font-weight: 600;
 }
 
-/* Hero Section with Animated Image Background Slider */
+/* Hero Section with High Visibility Animated Image Background Slider */
 .hero-section {
   padding: 5rem 0 5.5rem 0;
   position: relative;
@@ -463,17 +462,18 @@ img {
   animation-delay: 8s;
 }
 
+/* Increased Background Image Visibility to 0.92 */
 @keyframes heroKenBurnsFade {
   0% {
     opacity: 0;
     transform: scale(1);
   }
   15% {
-    opacity: 0.72;
+    opacity: 0.92;
     transform: scale(1.04);
   }
   50% {
-    opacity: 0.72;
+    opacity: 0.92;
     transform: scale(1.12);
   }
   65% {
@@ -489,7 +489,7 @@ img {
 .hero-video-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(6, 26, 20, 0.5) 0%, rgba(6, 26, 20, 0.88) 100%);
+  background: linear-gradient(180deg, rgba(8, 14, 24, 0.3) 0%, rgba(8, 14, 24, 0.68) 100%);
   z-index: 1;
 }
 
@@ -504,20 +504,25 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.3rem;
+  background: rgba(14, 23, 38, 0.7);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-dark);
 }
 
 .hero-badge-tag {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: rgba(16, 185, 129, 0.2);
-  color: var(--cyan-accent);
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--gold-accent);
   padding: 0.45rem 1.1rem;
   border-radius: 30px;
   font-size: 0.88rem;
   font-weight: 700;
   width: fit-content;
-  border: 1px solid rgba(16, 185, 129, 0.4);
+  border: 1px solid rgba(245, 158, 11, 0.35);
   backdrop-filter: blur(10px);
 }
 
@@ -552,7 +557,7 @@ img {
   gap: 1rem;
   margin-top: 1.4rem;
   padding: 1.3rem;
-  background: rgba(17, 56, 43, 0.85);
+  background: rgba(22, 34, 53, 0.85);
   backdrop-filter: blur(12px);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-lg);
@@ -616,12 +621,12 @@ img {
 .float-badge-icon {
   width: 48px;
   height: 48px;
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(245, 158, 11, 0.18);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cyan-accent);
+  color: var(--gold-accent);
   font-size: 1.3rem;
 }
 
@@ -644,7 +649,7 @@ img {
 }
 
 .section-tag {
-  color: var(--cyan-accent);
+  color: var(--gold-accent);
   font-size: 0.88rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -730,14 +735,14 @@ img {
 }
 
 .pillar-box {
-  background: rgba(6, 26, 20, 0.7);
+  background: rgba(14, 23, 38, 0.7);
   padding: 1.2rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-dark);
 }
 
 .pillar-box i {
-  color: var(--emerald-green);
+  color: var(--gold-accent);
   font-size: 1.3rem;
   margin-bottom: 0.4rem;
 }
@@ -759,7 +764,7 @@ img {
   text-align: center;
   font-size: 0.83rem;
   font-weight: 700;
-  color: var(--cyan-accent);
+  color: var(--gold-accent);
   margin-bottom: 1rem;
 }
 
@@ -769,7 +774,7 @@ img {
   }
 }
 
-/* Filterable Destinations Section (Mint Azure Gradient Background Theme) */
+/* Filterable Destinations Section (Soft Platinum Background Theme) */
 .destinations-section {
   padding: 5.5rem 0;
   background: var(--section-ice-bg);
@@ -807,10 +812,10 @@ img {
 }
 
 .filter-btn:hover, .filter-btn.active {
-  background: var(--emerald-vibrant);
-  color: #ffffff;
-  border-color: var(--emerald-vibrant);
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+  background: var(--gold-accent);
+  color: #000000;
+  border-color: var(--gold-accent);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
 }
 
 .destinations-grid {
@@ -835,7 +840,7 @@ img {
 .country-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--emerald-vibrant);
+  border-color: var(--gold-accent);
 }
 
 .country-card-header {
@@ -859,7 +864,7 @@ img {
 
 .country-card-title span {
   font-size: 0.8rem;
-  color: var(--emerald-vibrant);
+  color: var(--gold-accent);
   font-weight: 700;
 }
 
@@ -871,8 +876,8 @@ img {
 }
 
 .v-tag {
-  background: var(--emerald-light);
-  color: var(--emerald-dark);
+  background: var(--gold-light);
+  color: #92400e;
   padding: 0.25rem 0.7rem;
   border-radius: 20px;
   font-size: 0.78rem;
@@ -896,7 +901,7 @@ img {
 }
 
 .country-highlights-list li i {
-  color: var(--emerald-dark);
+  color: #d97706;
 }
 
 /* Services Grid Section (Clean 4 Core Services Grid) */
@@ -936,26 +941,26 @@ img {
   background: var(--navy-hover);
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--cyan-accent);
+  border-color: var(--gold-accent);
 }
 
 .service-icon-box {
   width: 58px;
   height: 58px;
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(245, 158, 11, 0.18);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cyan-accent);
+  color: var(--gold-accent);
   font-size: 1.6rem;
   margin-bottom: 1.4rem;
   transition: var(--transition);
 }
 
 .service-card:hover .service-icon-box {
-  background: var(--emerald-vibrant);
-  color: #ffffff;
+  background: var(--gold-accent);
+  color: #000000;
 }
 
 .service-card h4 {
@@ -989,7 +994,7 @@ img {
 }
 
 .service-bullets li i {
-  color: var(--emerald-green);
+  color: var(--gold-accent);
 }
 
 /* Visa Eligibility Calculator Widget */
@@ -1029,7 +1034,7 @@ img {
 .form-input-dark, .form-select-dark {
   width: 100%;
   padding: 0.85rem 1rem;
-  background: rgba(6, 26, 20, 0.8);
+  background: rgba(14, 23, 38, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-sm);
   color: #ffffff;
@@ -1040,13 +1045,13 @@ img {
 
 .form-input-dark:focus, .form-select-dark:focus {
   outline: none;
-  border-color: var(--cyan-accent);
-  box-shadow: 0 0 12px rgba(52, 211, 153, 0.4);
+  border-color: var(--gold-accent);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
 }
 
 .result-output-card {
   margin-top: 2.2rem;
-  background: rgba(6, 26, 20, 0.9);
+  background: rgba(14, 23, 38, 0.9);
   border: 2px dashed var(--gold-accent);
   border-radius: var(--radius-md);
   padding: 2rem;
@@ -1090,7 +1095,7 @@ img {
   height: 10px;
   border-radius: 5px;
   background: #cbd5e1;
-  accent-color: var(--emerald-vibrant);
+  accent-color: var(--gold-accent);
   cursor: pointer;
 }
 
@@ -1122,12 +1127,12 @@ img {
 .info-item-icon {
   width: 48px;
   height: 48px;
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(245, 158, 11, 0.18);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--cyan-accent);
+  color: var(--gold-accent);
   font-size: 1.3rem;
   flex-shrink: 0;
 }
@@ -1160,7 +1165,7 @@ img {
 
 /* Footer */
 .footer-dark {
-  background: #030d0a;
+  background: #040810;
   color: #ffffff;
   padding: 4rem 0 2rem 0;
   border-top: 1px solid var(--border-dark);
@@ -1235,7 +1240,8 @@ img {
 }
 
 .sticky-btn.call {
-  background: var(--emerald-vibrant);
+  background: var(--gold-gradient);
+  color: #000000;
 }
 
 .sticky-btn.wa {
@@ -1262,8 +1268,8 @@ img {
     justify-content: center;
     width: 42px;
     height: 42px;
-    background: rgba(16, 185, 129, 0.2);
-    color: var(--cyan-accent);
+    background: rgba(245, 158, 11, 0.2);
+    color: var(--gold-accent);
     border-radius: var(--radius-sm);
     font-size: 1.4rem;
     cursor: pointer;
